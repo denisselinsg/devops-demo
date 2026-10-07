@@ -26,6 +26,6 @@ public class DemoControllerTest {
     public void testHelloEndpoint() throws Exception {
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("DevOps demo application is running!"));
+                .andExpect(content().string("DevOps demo - CI/CD is working!"));
     }
 }
