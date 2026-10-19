@@ -24,7 +24,7 @@ public class DemoControllerTest {
      */
     @Test
     public void testHelloEndpoint() throws Exception {
-        mockMvc.perform(get("/hello2"))
+        mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("DevOps demo - AUTOMATED DEPLOYMENT WORKS! 🚀"));
     }
